@@ -15,6 +15,8 @@ Jitter is a social networking platform that allows users to connect, share, and 
 ## Installation
 Jitter is a web-based platform and does not require any installation. Users can access it through a web browser on their desktop or mobile device.
 
+
+
 ## Usage
 1. **Sign Up/Log In:** New users can sign up for an account with their email address or log in if they already have an account.
 2. **Profile Setup:** Users can set up their profiles by adding personal information, profile pictures, and cover photos.
