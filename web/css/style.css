@@ -24,7 +24,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 .logo__header {
@@ -72,6 +73,77 @@ body {
   height: 100%;
 }
 
+/* body css */
 .main__body{
-  /* testesttes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85rem;
+  border-style: solid;
+  border-width: thin;
 }
+
+
+.box__ui{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-style: solid;
+  border-width: thin;
+}
+
+.icons{
+  list-style-type: none;
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding-top: 5rem;
+  font-size: 2.5rem;
+}
+
+.box__scroll{
+  width: 60%;
+  height: 100%;
+}
+
+.box__ui2{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-style: solid;
+  border-width: thin;
+}
+
+.box__ui2 > button{
+  width: 75%;
+  height: 10%;
+  margin-top: 5rem;
+}
+
+.box__item{
+  width: 75%;
+  height: 100%;
+  list-style-type: none;
+  display:flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.box__items{
+  width: 100%;
+  height: 20rem;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
