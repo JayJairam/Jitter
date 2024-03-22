@@ -150,41 +150,69 @@ button:hover {
   height: 100%;
 }
 
-.box__ui2{
+.box__ui2 {
   width: 20%;
   height: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  border-style: solid;
-  border-width: thin;
+  gap: 3rem;
+  border: 1px solid #dbdbdb; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 2rem; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.box__ui2 > button{
-  width: 75%;
-  height: 10%;
-  margin-top: 5rem;
-}
 
-.box__item{
-  width: 75%;
-  height: 100%;
-  list-style-type: none;
-  display:flex;
-  gap: 2rem;
-  flex-direction: column;
-}
-
-.box__items{
+.box__ui2 > button {
   width: 100%;
-  height: 20rem;
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
+  padding: 1.2rem; 
+  background-color: #405de6; 
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.box__ui2 > button:hover {
+  background-color: #5772d1; 
+}
+
+.box__item {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+
+.box__items {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #dbdbdb; 
+  border-radius: 5px; 
+}
+
+.box__items h5 {
+  margin: 0; 
+}
+
+.box__items button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #fafafa; 
+  color: #262626; 
+  border: 1px solid #dbdbdb; 
+  border-radius: 5px; 
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box__items button:hover {
+  background-color: #f0f0f0; 
+}
