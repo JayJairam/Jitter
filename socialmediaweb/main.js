@@ -1,14 +1,13 @@
-fetch("./js/data.json")
+fetch("data.json")
     .then(response => response.json())
     .then(data => {
         const frame = document.getElementById("loop");
         const scrollContainer = document.createElement("div");
         scrollContainer.style.overflow = "auto";
-        scrollContainer.style.width = "100%";
-        scrollContainer.style.marginLeft = "65rem";
+        scrollContainer.style.width = "80%";
+        scrollContainer.style.marginLeft = "25rem";
         scrollContainer.style.display = "block";
 
-    
         shuffleArray(data);
 
         data.forEach(element => {
@@ -20,7 +19,12 @@ fetch("./js/data.json")
                 <h2>${element.idname}</h2>
                 <p>${element.postPlaats}</p>
                 <img src="${element.imgPost}" alt="Post Image">
-                <p>${element.textPost}</p>`;
+                <p>${element.textPost}</p>
+                <div class="actions">
+                    <button class="like-btn">Like</button>
+                    <button class="share-btn">Share</button>
+                    <button class="save-btn">Save</button>
+                </div>`;
             scrollContainer.appendChild(newDiv);
         });
 
@@ -35,5 +39,3 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-
-

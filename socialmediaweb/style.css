@@ -30,7 +30,7 @@ body {
 
 .logo__header {
   list-style-type: none;
-  width: 15%;
+  width: 8%;
   height: 6rem;
   display: flex;
   align-items: center;
@@ -43,15 +43,14 @@ body {
   padding-left: -1rem;
 }
 
-.logo__items1 {}
-
 .mid__headerui {
   list-style-type: none;
-  width: 35%;
+  width: 15%;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 6rem;
 }
 
 .mid__headeruiItems>img {
@@ -61,7 +60,7 @@ body {
 
 .personel__header {
   list-style-type: none;
-  width: 15%;
+  width: 12%;
   height: 6rem;
   display: flex;
   align-items: center;
@@ -80,7 +79,7 @@ body {
   align-items: center;
   width: 100%;
   height: 85rem;
-  background-color: #fafafa; 
+  background-color: #fafafa;
 }
 
 .box__ui {
@@ -88,9 +87,9 @@ body {
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  background-color: #ffffff; 
-  border-radius: 10px; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .icons {
@@ -103,46 +102,120 @@ body {
 }
 
 .icons li {
-  color: #262626; 
-  font-size: 4rem;
+  color: #262626;
+  font-size: 3rem;
   cursor: pointer;
 }
 
 .icons li:hover {
-  color: #405de6; 
+  color: #405de6;
 }
 
 .button__ui1 {
-  background-color: #405de6; 
-  color: #ffffff; 
-  border: none; 
-  border-radius: 5px; 
+  background-color: #405de6;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
   padding: 1rem 2rem;
-  font-size: 1.6rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #5772d1; 
+  background-color: #5772d1;
 }
 
 
-.box__scroll{
+.box__scroll {
   width: 60%;
   height: 100%;
 }
 
 
-.card h2, .card p, .card img {
-  width: 50%; 
+.card h2,
+.card p,
+.card img {
+  width: 50%;
 }
 
-.card{
+.card h2 {
+  font-size: 1.6rem;
+
+  margin-bottom: 10px;
+
+}
+
+.card p {
+  font-size: 1.4rem;
+
+  margin-bottom: 15px;
+
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card {
   margin-bottom: 6rem;
+  background-color: #fff;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+
+  position: relative;
 }
 
-.scroll__function{
+.card .actions {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card .actions button {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.card .actions button:hover {
+  color: #405de6;
+}
+
+.card .actions button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.card .like-btn::before {
+  background-image: url('img/heart.png');
+  /* img werken niet :( */
+}
+
+.card .share-btn::before {
+  background-image: url('img/send.png');
+}
+
+.card .save-btn::before {
+  background-image: url('img/bookmark.png');
+}
+
+.scroll__function {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,18 +231,18 @@ button:hover {
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  border: 1px solid #dbdbdb; 
-  background-color: #ffffff; 
-  border-radius: 10px; 
-  padding: 2rem; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-.box__ui2 > button {
+.box__ui2>button {
   width: 100%;
-  padding: 1.2rem; 
-  background-color: #405de6; 
+  padding: 1.2rem;
+  background-color: #405de6;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -178,8 +251,8 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
-.box__ui2 > button:hover {
-  background-color: #5772d1; 
+.box__ui2>button:hover {
+  background-color: #5772d1;
 }
 
 .box__item {
@@ -187,32 +260,32 @@ button:hover {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .box__items {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #dbdbdb; 
-  border-radius: 5px; 
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
 }
 
 .box__items h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 .box__items button {
   width: 100%;
   padding: 0.8rem;
-  background-color: #fafafa; 
-  color: #262626; 
-  border: 1px solid #dbdbdb; 
-  border-radius: 5px; 
+  background-color: #fafafa;
+  color: #262626;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
   font-size: 1.4rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .box__items button:hover {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
